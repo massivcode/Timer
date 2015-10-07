@@ -51,7 +51,7 @@ public class TimerActivity extends AppCompatActivity implements View.OnClickList
             return (getTimeToString(hour).equals("") ? "00:" : getTimeToString(hour) + ":") +
                     (getTimeToString(minute).equals("") ? "00:" : getTimeToString(minute) + ":")
                     + (getTimeToString(second).equals("") ? "00:" : getTimeToString(second) + ":") +
-                    (milli);
+                    milli;
         }
 
         private String getTimeToString(int time) {
